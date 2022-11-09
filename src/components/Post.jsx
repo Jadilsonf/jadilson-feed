@@ -1,3 +1,4 @@
+import { Comment } from './Comment'
 import styles from './Post.module.css'
 
 export function Post(){
@@ -16,11 +17,32 @@ export function Post(){
             </header>
 
             <div className={styles.content}>
-                <p>Boa tarde</p>
+                <p>Fala galeraa 👋</p>
 
-                <p>Esse é meu primeiro posto no feed</p>
+                <p>Esse é basicamente o meu terceiro projeto</p>
 
-                <p>Bem empolgante!!!</p>
+                <p>
+                    <a href="">#codingforliving</a>{" "}
+                    <a href="">#herewego </a>
+                    <a href="">#hashtaghastag </a>
+                </p>
+            </div>
+
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu comentário</strong>
+
+                <textarea
+                    placeholder="Deixe um comentário"    
+                />
+                <footer>
+                    <button type="submit">Comentar</button>
+                </footer>
+            </form>
+            <div className={styles.commentList}>
+                <Comment/>
+                <Comment/>
+                <Comment/>
             </div>
             
         </article>
