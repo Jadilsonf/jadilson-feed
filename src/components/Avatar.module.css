@@ -1,0 +1,10 @@
+.avatar {
+    box-sizing: initial;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    border-style: solid;
+    border-inline-width: 2px;
+    border-color: var(--gray-800);
+    outline: 2px solid var(--blue-500)
+}

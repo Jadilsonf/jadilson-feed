@@ -18,16 +18,16 @@
     margin-top: -2rem;
 }
 
-.profile img{
+/* .profile img{
     box-sizing: initial;
-    width: 3rem;
+    width: 3rem;blue
     height: 3rem;
     border-radius: 8px;
     border-style: solid;
     border-inline-width: 2px;
     border-color: var(--gray-800);
     outline: 2px solid var(--green-500)
-}
+} */
 
 .profile strong {
     margin-top: 1rem;
@@ -70,6 +70,6 @@
 }
 
 .sidebar footer a:hover{
-    background: var(--green-500);
+    background: var(--blue-500);
     color: var(--white)
 }

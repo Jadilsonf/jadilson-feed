@@ -16,7 +16,7 @@ img{
     border-style: solid;
     border-inline-width: 2px;
     border-color: var(--gray-800);
-    outline: 2px solid var(--green-500)
+    outline: 2px solid var(--blue-500)
 }
 
 .content {
@@ -31,7 +31,7 @@ img{
 
 .content a {
     font-weight: bold;
-    color: var(--green-500);
+    color: var(--blue-500);
     text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ img{
     margin-top: 1rem;
     border-radius: 8px;
     border: 0;
-    background: var(--green-500);
+    background: var(--blue-500);
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
