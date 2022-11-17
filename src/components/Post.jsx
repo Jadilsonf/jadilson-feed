@@ -2,7 +2,11 @@ import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import styles from './Post.module.css'
 
-export function Post(){
+// author: { avatar_url: "", name:"" role:""}
+// publishedAT: Date
+// content: String
+
+export function Post(props){
     return (
         <article className={styles.post}>
             <header>
@@ -20,7 +24,7 @@ export function Post(){
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
 
-                <p>Esse é basicamente o meu terceiro projeto</p>
+                <p>Esse é o projeto mais complexo que estou desenvolvimento. Comentários e posts ainda não funcionam. Paciência + Café + Chá de Camomila 🧘‍♂️</p>
 
                 <p>
                     <a href="">#codingforliving</a>{" "}
@@ -41,8 +45,6 @@ export function Post(){
                 </footer>
             </form>
             <div className={styles.commentList}>
-                <Comment/>
-                <Comment/>
                 <Comment/>
             </div>
             
