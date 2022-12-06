@@ -20,7 +20,7 @@ const posts= [
     content: [
       {type: 'paragraph', content: 'Fala Galera' },
       {type: 'paragraph', content: 'Esse é basicamente o meu terceiro projeto' },
-      {type: 'link', content: 'jadilsonnews.netlify.com' } 
+      {type: 'link', content: 'jadilsonnews.netlify.com'} 
            ],
     publishedAt: new Date('2022-12-06 09:00:00'),          
   },
