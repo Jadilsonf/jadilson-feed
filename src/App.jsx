@@ -13,8 +13,8 @@ const posts= [
   {
     id: 1,
     author:{
-      avatarURL: 'https://github.com/jadilsonf.png',
-      name: 'Jadilson Pereira Filho',
+      avatarUrl: 'https://github.com/jadilsonf.png',
+      name: 'Jadilson Filho',
       role: 'Músico e Web Developer'
     },
     content: [
@@ -27,16 +27,15 @@ const posts= [
   {
     id: 2,
     author:{
-      avatarURL: 'https://www.petz.com.br/blog/wp-content/uploads/2022/02/gato-e-carnivoro2.jpg',
-      name: 'Ana Flávia',
-      role: 'Maquiadora e Nutricionista'
+      avatarUrl: 'https://github.com/matheusdts.png',
+      name: 'Matheus Dantas',
+      role: 'Data Scientist'
     },
     content: [
-      {type: 'paragraph', content: 'Fala Galera' },
-      {type: 'paragraph', content: 'Esse é basicamente o meu terceiro projeto' },
-      {type: 'link', content: 'jadilsonnews.netlify.com' } 
+      {type: 'paragraph', content: 'Hello World 1' },
+      {type: 'paragraph', content: 'Hello World 2' },
            ],
-    publishedAt: new Date('2022-05-03 20:00:00'),          
+    publishedAt: new Date('2022-05-10 20:00:00'),          
   }
 ]
 

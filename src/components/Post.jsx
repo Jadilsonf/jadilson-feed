@@ -11,7 +11,7 @@ export function Post(props){
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src="https://github.com/jadilsonf.png"/>
+                    <Avatar src={props.author.avatarUrl}/>
                     <div className={styles.authorInfo}>
                         <strong>Jadilson Filho</strong>
                         <span>Web Developer</span>
@@ -24,7 +24,7 @@ export function Post(props){
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
 
-                <p>Esse é o projeto mais complexo que estou desenvolvimento. Comentários e posts ainda não funcionam. Paciência + Café + Chá de Camomila 🧘‍♂️</p>
+                <p>Esse é o projeto mais complexo que estou desenvolvendo. Comentários e posts ainda não funcionam. Paciência + Café + Chá de Camomila 🧘‍♂️</p>
 
                 <p>
                     <a href="">#codingforliving</a>{" "}
