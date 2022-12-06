@@ -1,3 +1,6 @@
+import { format, formatDistanceToNow} from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR'
+
 import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 import styles from './Post.module.css'
@@ -6,31 +9,41 @@ import styles from './Post.module.css'
 // publishedAT: Date
 // content: String
 
-export function Post(props){
+export function Post({author, publishedAt, content}){
+
+    const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'",{
+        locale: ptBR
+    })
+
+    const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+        locale: ptBR,
+        addSuffix: true
+    }) 
+
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <Avatar src={props.author.avatarUrl}/>
+                    <Avatar src={author.avatarUrl}/>
                     <div className={styles.authorInfo}>
-                        <strong>Jadilson Filho</strong>
-                        <span>Web Developer</span>
+                        <strong>{author.name}</strong>
+                        <span>{author.role}</span>
                     </div>
                 </div>
 
-                <time title="29 de Outubro às 13:08" dateTime='2022-10-29 13:09:30'>publicado a 1h</time>
+                <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>
+                    {publishedDateRelativeToNow}
+                </time>
             </header>
 
             <div className={styles.content}>
-                <p>Fala galeraa 👋</p>
-
-                <p>Esse é o projeto mais complexo que estou desenvolvendo. Comentários e posts ainda não funcionam. Paciência + Café + Chá de Camomila 🧘‍♂️</p>
-
-                <p>
-                    <a href="">#codingforliving</a>{" "}
-                    <a href="">#herewego </a>
-                    <a href="">#hashtaghastag </a>
-                </p>
+               {content.map(line =>{
+                if (line.type === 'paragraph'){
+                    return <p>{line.content}</p>
+                } else if (line.type === 'link') {
+                    return <p><a href='#'>{line.content}</a></p>
+                }
+               })}
             </div>
 
 
