@@ -15,12 +15,12 @@ const posts= [
     author:{
       avatarUrl: 'https://github.com/jadilsonf.png',
       name: 'Jadilson Filho',
-      role: 'Músico e Web Developer'
+      role: 'Web Developer'
     },
     content: [
       {type: 'paragraph', content: 'Fala Galera' },
-      {type: 'paragraph', content: 'Esse é basicamente o meu terceiro projeto' },
-      {type: 'link', content: 'jadilsonnews.netlify.com'} 
+      {type: 'paragraph', content: 'Esse projeto ainda está em construção, mas você pode testar a funcionalidade de comentários.' },
+      // {type: 'link', content: 'jadilsonnews.netlify.com'} 
            ],
     publishedAt: new Date('2022-12-06 09:00:00'),          
   },
