@@ -32,8 +32,8 @@ const posts= [
       role: 'Data Scientist'
     },
     content: [
-      {type: 'paragraph', content: 'Hello World 1' },
-      {type: 'paragraph', content: 'Hello World 2' },
+      {type: 'paragraph', content: 'Depoimento p/ Jadilson' },
+      // {type: 'paragraph', content: 'Hello World 2' },
            ],
     publishedAt: new Date('2022-12-05 20:00:00'),          
   }
